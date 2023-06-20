@@ -2,8 +2,6 @@
     
     include 'konek.php';
 
-    include '../config.php';
-    session_start();
 
     $query = mysqli_query($db, 'SELECT * FROM hasil');
     $data = mysqli_fetch_array($query);
@@ -21,7 +19,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <h2 style="text-align: center;"><?php echo $_SESSION['universitas']; ?></h2>
+    <h2 style="text-align: center;">Universitas Sultan Ageng Tirtayasa</h2>
    <table style="background-color: aqua;">
     <tr>
         <th colspan="4" style="text-align: center; width: 1500px; height: 50px; margin-top: 0px;">KESIAPAN PELAKSANAAN KERJA</th>
